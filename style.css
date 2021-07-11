@@ -1,4 +1,4 @@
-#calculator {
+.calculator {
     border-radius: 10%;
     position: absolute;
     background-color: black;
@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
 }
 
-#calculatorWindow {
+.calculatorWindow {
     width: 90%;
     font-size: 48px;;
     min-height: 80px;
@@ -20,7 +20,7 @@
     margin-top: 60px;
 }
 
-#calculatorKeys {
+.calculatorKeys {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 20px;
@@ -80,4 +80,9 @@ button {
 
 .operator:active {
     filter:brightness(110%);
+}
+
+.is-depressed {
+    filter: brightness(110%);
+
 }

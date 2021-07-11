@@ -7,29 +7,29 @@
     <meta charset="UTF-8"/>
 </head>
 <body>
-    <div id = "calculator">
-        <input type="text" id = "calculatorWindow" value = "0" disabled/>
-        <div id = "calculatorKeys">
-            <button type = "button" class = "utility" value = "clear">AC</button>
-            <button type = "button" class = "utility" value = "backspace">C</button>
-            <button type = "button" class = "utility" value = "changeSign">+/-</button>
-            <button type = "button" class = "operator" value = "/">/</button>
+    <div class = "calculator">
+        <div class = "calculatorWindow">0</div>
+        <div class = "calculatorKeys">
+            <button type = "button" class = "utility" value = "clear" data-action="clear">AC</button>
+            <button type = "button" class = "utility" value = "backspace" data-action="backspace">C</button>
+            <button type = "button" class = "utility" value = "changeSign" data-action = changeSign>+/-</button>
+            <button type = "button" class = "operator" value = "/" data-action="divide">/</button>
             <button type = "button" class = "integer" value="7">7</button>
             <button type = "button" class = "integer" value = "8">8</button>
             <button type = "button" class = "integer" value="9">9</button>
-            <button type = "button" class = "operator" value="x">X</button>
+            <button type = "button" class = "operator" value="x" data-action="multiply">X</button>
             <button type = "button" class = "integer" value="4">4</button>
             <button type = "button" class = "integer" value="5">5</button>
             <button type = "button" class = "integer" value="6">6</button>
-            <button type = "button" class = "operator" value="-">-</button>
+            <button type = "button" class = "operator" value="-" data-action = "subtract">-</button>
             <button type = "button" class = "integer" value="1">1</button>
             <button type = "button" class = "integer" value="2">2</button>
             <button type = "button" class = "integer" value="3">3</button>
-            <button type = "button" class = "operator" value="+">+</button>
+            <button type = "button" class = "operator" value="+" data-action="add">+</button>
             <button type = "button" class = "integer" value="0">0</button>
             <button type = "button" class = "percent" value="%">%</button>
-            <button type = "button" class = "integer" value=".">.</button>
-            <button type = "button" class = "operator" value="=">=</button>
+            <button type = "button" class = "integer" value="." data-action="decimal">.</button>
+            <button type = "button" class = "operator" value="=" data-action="calculate">=</button>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
