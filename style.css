@@ -47,12 +47,37 @@ button {
     color: #1C1C1C;
 }
 
-.integer {
+.utility:hover {
+    filter: brightness(40%);
+}
+
+.utility:active {
+    filter: brightness(110%);
+}
+
+.integer, .percent {
     background-color: #1C1C1C;
     color: #D4D4D2;
 }
 
+.integer:hover, .perfect:hover {
+    filter: brightness(40%);
+}
+
+.integer:active, .perfect:active {
+    filter: brightness(110%);
+}
+
+
 .operator {
     background-color: #FF9500;
     color: #D4D4D2;
+}
+
+.operator:hover {
+    filter: brightness(40%);
+}
+
+.operator:active {
+    filter:brightness(110%);
 }
